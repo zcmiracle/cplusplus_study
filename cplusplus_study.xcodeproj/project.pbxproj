@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		B309AE6D2637EF6B00B1636E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B309AE6C2637EF6B00B1636E /* main.cpp */; };
+		B309AE7E26380FBA00B1636E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B309AE7D26380FBA00B1636E /* main.cpp */; };
 		B3147FCA2637C44C00CF20D8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3147FC92637C44C00CF20D8 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B309AE682637EF6B00B1636E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B309AE7926380FBA00B1636E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -35,12 +45,21 @@
 /* Begin PBXFileReference section */
 		B309AE6A2637EF6B00B1636E /* 01-函数重载 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-函数重载"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B309AE6C2637EF6B00B1636E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B309AE7B26380FBA00B1636E /* 02-默认参数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02-默认参数"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B309AE7D26380FBA00B1636E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3147FC62637C44C00CF20D8 /* CPlusPlus_study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPlusPlus_study; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3147FC92637C44C00CF20D8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B309AE672637EF6B00B1636E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B309AE7826380FBA00B1636E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,11 +84,20 @@
 			path = "01-函数重载";
 			sourceTree = "<group>";
 		};
+		B309AE7C26380FBA00B1636E /* 02-默认参数 */ = {
+			isa = PBXGroup;
+			children = (
+				B309AE7D26380FBA00B1636E /* main.cpp */,
+			);
+			path = "02-默认参数";
+			sourceTree = "<group>";
+		};
 		B3147FBD2637C44C00CF20D8 = {
 			isa = PBXGroup;
 			children = (
 				B3147FC82637C44C00CF20D8 /* CPlusPlus_study */,
 				B309AE6B2637EF6B00B1636E /* 01-函数重载 */,
+				B309AE7C26380FBA00B1636E /* 02-默认参数 */,
 				B3147FC72637C44C00CF20D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +107,7 @@
 			children = (
 				B3147FC62637C44C00CF20D8 /* CPlusPlus_study */,
 				B309AE6A2637EF6B00B1636E /* 01-函数重载 */,
+				B309AE7B26380FBA00B1636E /* 02-默认参数 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +140,23 @@
 			productReference = B309AE6A2637EF6B00B1636E /* 01-函数重载 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B309AE7A26380FBA00B1636E /* 02-默认参数 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B309AE7F26380FBA00B1636E /* Build configuration list for PBXNativeTarget "02-默认参数" */;
+			buildPhases = (
+				B309AE7726380FBA00B1636E /* Sources */,
+				B309AE7826380FBA00B1636E /* Frameworks */,
+				B309AE7926380FBA00B1636E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-默认参数";
+			productName = "02-默认参数";
+			productReference = B309AE7B26380FBA00B1636E /* 02-默认参数 */;
+			productType = "com.apple.product-type.tool";
+		};
 		B3147FC52637C44C00CF20D8 /* CPlusPlus_study */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3147FCD2637C44C00CF20D8 /* Build configuration list for PBXNativeTarget "CPlusPlus_study" */;
@@ -139,6 +185,9 @@
 					B309AE692637EF6B00B1636E = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					B309AE7A26380FBA00B1636E = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					B3147FC52637C44C00CF20D8 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -159,6 +208,7 @@
 			targets = (
 				B3147FC52637C44C00CF20D8 /* CPlusPlus_study */,
 				B309AE692637EF6B00B1636E /* 01-函数重载 */,
+				B309AE7A26380FBA00B1636E /* 02-默认参数 */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +219,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B309AE6D2637EF6B00B1636E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B309AE7726380FBA00B1636E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B309AE7E26380FBA00B1636E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +253,26 @@
 			name = Debug;
 		};
 		B309AE6F2637EF6B00B1636E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B309AE8026380FBA00B1636E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B309AE8126380FBA00B1636E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -343,6 +421,15 @@
 			buildConfigurations = (
 				B309AE6E2637EF6B00B1636E /* Debug */,
 				B309AE6F2637EF6B00B1636E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B309AE7F26380FBA00B1636E /* Build configuration list for PBXNativeTarget "02-默认参数" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B309AE8026380FBA00B1636E /* Debug */,
+				B309AE8126380FBA00B1636E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
