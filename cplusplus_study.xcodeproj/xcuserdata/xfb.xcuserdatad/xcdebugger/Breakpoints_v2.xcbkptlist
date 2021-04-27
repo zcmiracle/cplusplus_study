@@ -3,4 +3,82 @@
    uuid = "2AC49626-A343-4780-A1BB-21929F10B279"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "35CA4B96-1E4D-4099-9DB4-21A1AD69B468"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x1000039f5">
+            <Locations>
+               <Location
+                  uuid = "35CA4B96-1E4D-4099-9DB4-21A1AD69B468 - 929d61a8c49f15d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "display(long)"
+                  moduleName = "01-&#x51fd;&#x6570;&#x91cd;&#x8f7d;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/01-%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "3D8E2916-6A0B-4F47-BC68-6B81DB0C1791"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x1000031f5">
+            <Locations>
+               <Location
+                  uuid = "3D8E2916-6A0B-4F47-BC68-6B81DB0C1791 - 1b67356ae5944d2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_mh_execute_header"
+                  moduleName = "01-&#x51fd;&#x6570;&#x91cd;&#x8f7d;"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "12789">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "810BD901-8CA1-441E-8007-C8A7626AFC9A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x100003a75">
+            <Locations>
+               <Location
+                  uuid = "810BD901-8CA1-441E-8007-C8A7626AFC9A - c2990cb31ee61ddf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "01-&#x51fd;&#x6570;&#x91cd;&#x8f7d;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/01-%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "67">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
