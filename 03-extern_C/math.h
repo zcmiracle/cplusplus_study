@@ -5,6 +5,8 @@
 //  Created by XFB on 2021/4/28.
 //
 
+/// 防止重复#include "main.h" 重复参与编译
+/// 宏定位最好和文件名挂钩 __ 下划线开头 也行
 #ifndef math_h
 #define math_h
 
@@ -32,6 +34,5 @@ extern "C" {
 }
 #endif // __cplusplus
 
-
-
 #endif /* math_h */
+
