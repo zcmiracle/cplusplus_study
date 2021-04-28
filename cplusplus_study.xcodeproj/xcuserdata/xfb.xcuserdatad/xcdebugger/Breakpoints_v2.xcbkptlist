@@ -7,81 +7,26 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
          <BreakpointContent
-            uuid = "35CA4B96-1E4D-4099-9DB4-21A1AD69B468"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            symbolName = "*0x1000039f5">
-            <Locations>
-               <Location
-                  uuid = "35CA4B96-1E4D-4099-9DB4-21A1AD69B468 - 9977b386861173b3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "03-extern_C"
-                  usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "14837">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
-         <BreakpointContent
-            uuid = "810BD901-8CA1-441E-8007-C8A7626AFC9A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            symbolName = "*0x100003a75">
-            <Locations>
-               <Location
-                  uuid = "810BD901-8CA1-441E-8007-C8A7626AFC9A - 9977b386861173b3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "03-extern_C"
-                  usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "14965">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "834CD6B7-E9D7-43DD-832B-FCD26E079B39"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "02-&#x9ed8;&#x8ba4;&#x53c2;&#x6570;/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "main()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
-         <BreakpointContent
-            uuid = "AB6A32E0-5909-4516-B592-0056683C6441"
+            uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = "*0x100003299">
             <Locations>
                <Location
-                  uuid = "AB6A32E0-5909-4516-B592-0056683C6441 - 9977b386861173b3"
+                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 64d9fc99f1810453"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "03-extern_C"
+                  symbolName = "std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp; std::__1::endl&lt;char, std::__1::char_traits&lt;char&gt; &gt;(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;)"
+                  moduleName = "04-&#x5185;&#x8054;&#x51fd;&#x6570;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "12953">
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ostream"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1008"
+                  endingLineNumber = "1008"
+                  offsetFromSymbolStart = "89">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -89,21 +34,53 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
          <BreakpointContent
-            uuid = "53C2314B-C77C-4EBE-9B71-18D5CDBED2B4"
+            uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            symbolName = "*0x1000032b9">
+            symbolName = "*0x100003b3a">
             <Locations>
                <Location
-                  uuid = "53C2314B-C77C-4EBE-9B71-18D5CDBED2B4 - 9977b386861173b3"
+                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - 870ea0e509b1a9b0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "03-extern_C"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;::__get_long_pointer() const"
+                  moduleName = "04-&#x5185;&#x8054;&#x51fd;&#x6570;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "12985">
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1502"
+                  endingLineNumber = "1502"
+                  offsetFromSymbolStart = "10">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x100003ab7">
+            <Locations>
+               <Location
+                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - 6aee325a049203ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;::__get_pointer() const"
+                  moduleName = "04-&#x5185;&#x8054;&#x51fd;&#x6570;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1514"
+                  endingLineNumber = "1514"
+                  offsetFromSymbolStart = "39">
                </Location>
             </Locations>
          </BreakpointContent>
