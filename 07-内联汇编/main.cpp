@@ -8,6 +8,11 @@
 #include <iostream>
 using namespace std;
 
+
+int sum(int a, int b) {
+    return a + b;
+}
+
 int main() {
 
     // 内联汇编
@@ -15,6 +20,9 @@ int main() {
 //    asm {
 //        mov eax, 20
 //    }
+    
+//    int c = sum(1, 2);
+    
     
     int a = 10;
     int b = 20;
@@ -25,7 +33,6 @@ int main() {
         printf("222222");
     }
         
-    
     return 0;
 }
 
@@ -88,6 +95,7 @@ int main() {
 1、操作数长度
     + movl %eax, %edx
     其中l是操作数长度
+
 b = byte(8-bit)
 s = short(16-bit integer or 32-bit floating point)
 w = word(16-bit)
