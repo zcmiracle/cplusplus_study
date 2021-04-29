@@ -107,5 +107,64 @@ int age = 20;
 int &refAge = age;
 ```
 + **注意点**：
-    + 引用相当于是变量的别名
-    + ...
+    + 引用相当于是变量的别名（**基本数据类型、枚举、结构体、类、指针、数组**等，都可以有引用）
+    + 对引用做计算，就是对引用所指向的变量做计算。
+    + 在定义的时候就必须初始化，一旦指向了某个变量，就不可以再改变，“从一而终”。
+    + 可以利用引用初始化另一个引用，相当于多个别名
+    + 不存在引用的引用、指向引用的指针、引用数组 
++ 引用存在价值：比指针更安全、函数返回值可以被赋值
+
+
+**引用的本质**
++ 引用的本质就是指针（通过汇编分析，指针和引用的汇编代码一样），只是编译器削弱了它的功能，所以引用就是弱化了的指针
++ 一个引用要占用一个指针的大小。通过结构体里面设置指针和引用分析得出。
+
+
+```c++
+int main() {
+    int age = 10;
+    // 指针
+    int *p = &age;
+    *p = 20;
+    return 0;
+}
+
+int main() {
+    int age = 10;
+    // 引用
+    int &refAge = age;
+    refAge = 30;
+    return 0;
+}
+```
++ 指针和引用生成的汇编代码如下：
+
+```c++
+// 指针
+`main:
+    pushq  %rbp
+    movq   %rsp, %rbp
+    xorl   %eax, %eax
+    movl   $0x0, -0x4(%rbp)
+    movl   $0xa, -0x8(%rbp)
+    leaq   -0x8(%rbp), %rcx
+    movq   %rcx, -0x10(%rbp)
+    movq   -0x10(%rbp), %rcx
+    movl   $0x14, (%rcx) // 16 + 4 = 20
+    popq   %rbp
+    retq
+
+// 引用
+`main:
+    pushq  %rbp
+    movq   %rsp, %rbp
+    xorl   %eax, %eax
+    movl   $0x0, -0x4(%rbp)
+    movl   $0xa, -0x8(%rbp)
+    leaq   -0x8(%rbp), %rcx
+    movq   %rcx, -0x10(%rbp)
+    movq   -0x10(%rbp), %rcx
+    movl   $0x1e, (%rcx) // 16 + 14 = 30
+    popq   %rbp
+    retq
+```
