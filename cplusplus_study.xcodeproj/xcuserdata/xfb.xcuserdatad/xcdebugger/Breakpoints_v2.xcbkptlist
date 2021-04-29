@@ -14,12 +14,12 @@
             symbolName = "*0x100003299">
             <Locations>
                <Location
-                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 3c50cc145f9bc915"
+                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 1b6bc25fa74b6c31"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "_mh_execute_header"
-                  moduleName = "06-&#x5f15;&#x7528;"
+                  moduleName = "07-&#x5185;&#x8054;&#x6c47;&#x7f16;"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "12953">
                </Location>
@@ -36,12 +36,12 @@
             symbolName = "*0x100003b3a">
             <Locations>
                <Location
-                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - 3c50cc145f9bc915"
+                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - 1b6bc25fa74b6c31"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "_mh_execute_header"
-                  moduleName = "06-&#x5f15;&#x7528;"
+                  moduleName = "07-&#x5185;&#x8054;&#x6c47;&#x7f16;"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "15162">
                </Location>
@@ -58,12 +58,12 @@
             symbolName = "*0x100003ab7">
             <Locations>
                <Location
-                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - 3c50cc145f9bc915"
+                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - 1b6bc25fa74b6c31"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "_mh_execute_header"
-                  moduleName = "06-&#x5f15;&#x7528;"
+                  moduleName = "07-&#x5185;&#x8054;&#x6c47;&#x7f16;"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "15031">
                </Location>
@@ -87,19 +87,57 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
          <BreakpointContent
-            uuid = "8B1A91FB-64EA-4818-A3AF-F9A576C0AC80"
+            uuid = "9A1D0CBA-9744-4399-BA00-F5B60739E489"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "06-&#x5f15;&#x7528;/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "main()"
-            landmarkType = "9">
+            symbolName = "*0x100003fb0">
+            <Locations>
+               <Location
+                  uuid = "9A1D0CBA-9744-4399-BA00-F5B60739E489 - 3cc1973ca14eeb6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "07-&#x5185;&#x8054;&#x6c47;&#x7f16;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/07-%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "767C2743-F618-4910-B100-154ABEE13BD2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x100003fa4">
+            <Locations>
+               <Location
+                  uuid = "767C2743-F618-4910-B100-154ABEE13BD2 - 3cc1973ca14eeaea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "07-&#x5185;&#x8054;&#x6c47;&#x7f16;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/07-%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
