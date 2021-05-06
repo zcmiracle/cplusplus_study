@@ -55,7 +55,7 @@ int main() {
     
     
     int age2 = 10;
-    const long &refA = age2;
+    const int &refA = age2;
     age2 = 30;
     
     cout << "age2  is  " << age2 << endl;
