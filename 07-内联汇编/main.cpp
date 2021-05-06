@@ -21,17 +21,18 @@ int main() {
 //        mov eax, 20
 //    }
     
-//    int c = sum(1, 2);
+    int c = sum(1, 2);
     
+//    cout << c << endl;
     
-    int a = 10;
-    int b = 20;
-    
-    if (a == b) {
-        printf("111111");
-    } else {
-        printf("222222");
-    }
+//    int a = 10;
+//    int b = 20;
+//    
+//    if (a == b) {
+//        printf("111111");
+//    } else {
+//        printf("222222");
+//    }
         
     return 0;
 }
@@ -102,5 +103,56 @@ w = word(16-bit)
 l = long(32-bit integer or 64-bit floating point)
 q = quad(64-bit)
 t = ten bytes(80-bit foating point)
+
+
+
+
+
+int c = sum(1, 2);
+
+07-内联汇编`main:
+
+    // 入栈
+    0x100003f80 <+0>:  pushq  %rbp
+    // rbp = rsp  rsp赋值给rbp
+    0x100003f81 <+1>:  movq   %rsp, %rbp
+    // 16字节  rsp 减去 16字节
+    0x100003f84 <+4>:  subq   $0x10, %rsp
+    
+    0x100003f88 <+8>:  movl   $0x0, -0x4(%rbp)
+    // edi = 1 变址寄存器 主要用于存放存储单元在段内的偏移量
+    0x100003f8f <+15>: movl   $0x1, %edi
+    // esi = 2 变址寄存器 主要用于存放存储单元在段内的偏移量
+    0x100003f94 <+20>: movl   $0x2, %esi
+    // sum()
+    0x100003f99 <+25>: callq  0x100003f60               ; sum at main.cpp:12
+
+    // ecx = ecx ^ ecx
+    0x100003f9e <+30>: xorl   %ecx, %ecx
+    // 函数返回值
+    0x100003fa0 <+32>: movl   %eax, -0x8(%rbp)
+    // 将ecx赋值给eax ECX 是计数器(counter), 是重复(REP)前缀指令和LOOP指令的内定计数器。
+    0x100003fa3 <+35>: movl   %ecx, %eax
+
+    // 栈平衡
+    0x100003fa5 <+37>: addq   $0x10, %rsp
+    0x100003fa9 <+41>: popq   %rbp
+    0x100003faa <+42>: retq
+
+
+4个数据寄存器(EAX、EBX、ECX、EDX)
+2个变址和指针寄存器(ESI、EDI)
+2个指针寄存器(ESP、EBP)
+
+栈的最常见操作有两种：Push（入栈）和Pop（出栈）。
+
+ESI、EDI
+它们主要用于存放存储单元在段内的偏移量，用它们可实现多种存储器操作数的寻址方式，为以不同的地址形式访问存储单元提供方便。
+变址寄存器不可分割成8位寄存器。作为通用寄存器，也可存储算术逻辑运算的操作数和运算结果。
+它们可作一般的存储器指针使用。在字符串操作指令的执行过程中，对它们有特定的要求，而且还具有特殊的功能。
+
+
+ESP(rsp)：栈指针寄存器，其内存放着一个指针，该指针永远指向系统栈最上面一个栈帧的栈顶。
+EBP(rbp)：基址指针寄存器，其内存放着一个指针，该指针永远指向系统栈最上面一个栈帧的底部。
 
 #endif
