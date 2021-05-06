@@ -21,9 +21,9 @@ int main() {
 //        mov eax, 20
 //    }
     
-    int c = sum(1, 2);
-    
+//    int c = sum(1, 2);
 //    cout << c << endl;
+
     
 //    int a = 10;
 //    int b = 20;
@@ -33,6 +33,36 @@ int main() {
 //    } else {
 //        printf("222222");
 //    }
+    
+    
+//    int a = 1;
+//    int b = 2;
+//    int c = a + b;
+    
+   
+//    int age = 2;
+//    int *p = &age;
+//    *p = 3;
+   
+    
+    
+    // 引用补充
+//    int age= 20;
+//    int *p1 = &age;
+//    int *&ref1 = p1;
+//    *ref1 = 30;
+//    int height = 30;
+//    ref1 = &height;
+    
+//    int array[] = {1, 2, 3};
+//    int (&ref)[3] = array;
+
+    int *p;
+    // 指针数组，数组里面可以存放3个 int *
+    int *arr1[3] = {p, p, p};
+    // 用于指向数组的指针，指向存放int元素的数组，而且有3个
+    int (*arr2)[3];
+    
         
     return 0;
 }
@@ -154,5 +184,61 @@ ESI、EDI
 
 ESP(rsp)：栈指针寄存器，其内存放着一个指针，该指针永远指向系统栈最上面一个栈帧的栈顶。
 EBP(rbp)：基址指针寄存器，其内存放着一个指针，该指针永远指向系统栈最上面一个栈帧的底部。
+
+07-内联汇编`main:
+    0x100003f90 <+0>:  pushq  %rbp
+    0x100003f91 <+1>:  movq   %rsp, %rbp
+    0x100003f94 <+4>:  xorl   %eax, %eax
+
+    // 将0寄存器赋值给【rbp-0x4】所在的存储空间
+    0x100003f96 <+6>:  movl   $0x0, -0x4(%rbp)
+    // 将1赋值给【rbp - 0x8】地址所在的存储空间 a = 1
+    0x100003f9d <+13>: movl   $0x1, -0x8(%rbp)
+    // 将2赋值给【rbp - 0xc】地址所在的存储空间 b = 2
+    0x100003fa4 <+20>: movl   $0x2, -0xc(%rbp)
+
+    // 将【rbp-0x8】地址所在存储空间的值赋值给ecx 将a 赋值给ecx
+    0x100003fab <+27>: movl   -0x8(%rbp), %ecx
+    // 将【rbp-0xc】地址所在存储空间的值取出 + ecx 也就是b的值 和 ecx也就是a的值相加
+    0x100003fae <+30>: addl   -0xc(%rbp), %ecx
+    0x100003fb1 <+33>: movl   %ecx, -0x10(%rbp)
+    0x100003fb4 <+36>: popq   %rbp
+    0x100003fb5 <+37>: retq
+
+
+
+
+07-内联汇编`main:
+    0x100003f90 <+0>:  pushq  %rbp
+    0x100003f91 <+1>:  movq   %rsp, %rbp
+    // 按位异或，相同的位置为0，不同的位置为1，eax和eax每一位都相同，所以相当于清零
+    // 将寄存器eax设置为0即 movl $0, %eax
+    // 使用objdump 对比发现xorl的版本只需要2个字节，而用movl的版本需要5个字节
+    // 运用了x^x = 0的这一属性
+    0x100003f94 <+4>:  xorl   %eax, %eax
+
+
+    // 把rbp栈帧指针减去4个字节的起始地址后的4字节的内存初始化为0
+    0x100003f96 <+6>:  movl   $0x0, -0x4(%rbp)
+
+    // 将堆栈指针减去8个字节的起始地址后的4字节的内存的值初始化为2
+    0x100003f9d <+13>: movl   $0x2, -0x8(%rbp)
+
+    // rcx保存栈底减去算好需要的空间字节
+->  0x100003fa4 <+20>: leaq   -0x8(%rbp), %rcx
+
+    // 将rcx地址所在存储空间的值赋值给【rbp-0x10】地址所在的存储空间
+    0x100003fa8 <+24>: movq   %rcx, -0x10(%rbp)
+
+    // 将rbp-0x10 地址所在存储空间的值赋值给rcx
+    0x100003fac <+28>: movq   -0x10(%rbp), %rcx
+
+    // 将3赋值给rcx地址所在的存储空间
+    0x100003fb0 <+32>: movl   $0x3, (%rcx)
+
+    // 栈平衡
+    0x100003fb6 <+38>: popq   %rbp
+    0x100003fb7 <+39>: retq
+
 
 #endif
