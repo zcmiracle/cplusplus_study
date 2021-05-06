@@ -16,10 +16,10 @@ int sum(int a, int b) {
 int main() {
 
     // 内联汇编
-//    int a = 10;
-//    asm {
-//        mov eax, 20
-//    }
+    int a = 10;
+    asm {
+        mov eax, 20
+    }
     
 //    int c = sum(1, 2);
 //    cout << c << endl;
@@ -57,13 +57,12 @@ int main() {
 //    int array[] = {1, 2, 3};
 //    int (&ref)[3] = array;
 
-    int *p;
-    // 指针数组，数组里面可以存放3个 int *
-    int *arr1[3] = {p, p, p};
-    // 用于指向数组的指针，指向存放int元素的数组，而且有3个
-    int (*arr2)[3];
-    
-        
+//    int *p;
+//    // 指针数组，数组里面可以存放3个 int *
+//    int *arr1[3] = {p, p, p};
+//    // 用于指向数组的指针，指向存放int元素的数组，而且有3个
+//    int (*arr2)[3];
+//        
     return 0;
 }
 
