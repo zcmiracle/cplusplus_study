@@ -45,7 +45,6 @@ int main() {
     // 将指针p里面的存储的地址传递给display函数的this
     // 将&person.m_age传递给display函数的this
     
-    
     getchar();
     return 0;
 }
