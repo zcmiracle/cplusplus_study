@@ -45,9 +45,7 @@ int main() {
     Person person;
     person.age = 20;
     person.run();
-    
-    
-    
+        
     
     getchar();
     return 0;
