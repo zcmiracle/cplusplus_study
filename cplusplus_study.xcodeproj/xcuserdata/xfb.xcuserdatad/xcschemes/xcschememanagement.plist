@@ -94,6 +94,11 @@
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
+		<key>19-类的声明和实现分离.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>CPlusPlus_study.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
