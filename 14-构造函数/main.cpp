@@ -56,7 +56,6 @@ struct Person {
 // 全局区的person
 Person g_person;
 
-
 int main() {
 
     // 栈空间
@@ -81,7 +80,7 @@ int main() {
     p1->run();
     
     free(p1);
-    
+     
     return 0;
 }
 
