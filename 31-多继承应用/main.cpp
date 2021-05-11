@@ -16,13 +16,13 @@ public:
 };
 
 // 保姆
-class BabySitter() {
+class BabySitter {
 public:
     virtual void clean() = 0; // 打扫
     virtual void cook() = 0; // 烹饪
 };
 
-class Student: public Teacher, public Worker {
+class Student: public Teacher, public BabySitter {
     int m_score;
 public:
     void playBasketball() {}
