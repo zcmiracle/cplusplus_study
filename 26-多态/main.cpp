@@ -23,7 +23,6 @@ using namespace std;
  C++中的多态通过虚函数实现 （virtual function）来实现
  虚函数：被virtual修饰的成员函数
  只要在父类中声明为虚函数，子类中【重写】的函数也自动变成虚函数（也就是说子类中）
- 
 
  */
 
