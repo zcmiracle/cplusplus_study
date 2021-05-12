@@ -14,14 +14,19 @@
             symbolName = "*0x100003299">
             <Locations>
                <Location
-                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 1495e6e6444b5dca"
+                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 3442faae0a9188a0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "33-&#x5355;&#x4f8b;&#x6a21;&#x5f0f;"
+                  symbolName = "std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp; std::__1::__put_character_sequence&lt;char, std::__1::char_traits&lt;char&gt; &gt;(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;, char const*, unsigned long)"
+                  moduleName = "37-&#x5bf9;&#x8c61;&#x7c7b;&#x578b;&#x7684;&#x53c2;&#x6570;&#x548c;&#x8fd4;&#x56de;&#x503c;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "12953">
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ostream"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "169">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -36,14 +41,19 @@
             symbolName = "*0x100003b3a">
             <Locations>
                <Location
-                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - 1495e6e6444b5dca"
+                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - 5b2d7ba43e643992"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "33-&#x5355;&#x4f8b;&#x6a21;&#x5f0f;"
+                  symbolName = "std::__1::ostreambuf_iterator&lt;char, std::__1::char_traits&lt;char&gt; &gt;::ostreambuf_iterator(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;)"
+                  moduleName = "37-&#x5bf9;&#x8c61;&#x7c7b;&#x578b;&#x7684;&#x53c2;&#x6570;&#x548c;&#x8fd4;&#x56de;&#x503c;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "15162">
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1163"
+                  endingLineNumber = "1163"
+                  offsetFromSymbolStart = "90">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -58,14 +68,19 @@
             symbolName = "*0x100003ab7">
             <Locations>
                <Location
-                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - 1495e6e6444b5dca"
+                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - 94a6f67f2e28d3b7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "33-&#x5355;&#x4f8b;&#x6a21;&#x5f0f;"
+                  symbolName = "std::__1::pointer_traits&lt;char const*&gt;::pointer_to(char const&amp;)"
+                  moduleName = "37-&#x5bf9;&#x8c61;&#x7c7b;&#x578b;&#x7684;&#x53c2;&#x6570;&#x548c;&#x8fd4;&#x56de;&#x503c;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "15031">
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "993"
+                  endingLineNumber = "993"
+                  offsetFromSymbolStart = "7">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -96,19 +111,14 @@
             symbolName = "*0x100003d79">
             <Locations>
                <Location
-                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - 6b25a282d7003ce1"
+                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - ab2c27d600ac9855"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp; std::__1::endl&lt;char, std::__1::char_traits&lt;char&gt; &gt;(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;)"
-                  moduleName = "33-&#x5355;&#x4f8b;&#x6a21;&#x5f0f;"
+                  symbolName = "std::__1::locale::~locale()"
+                  moduleName = "37-&#x5bf9;&#x8c61;&#x7c7b;&#x578b;&#x7684;&#x53c2;&#x6570;&#x548c;&#x8fd4;&#x56de;&#x503c;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ostream"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1006"
-                  endingLineNumber = "1006"
-                  offsetFromSymbolStart = "25">
+                  offsetFromSymbolStart = "1">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -171,14 +181,19 @@
             symbolName = "*0x100002f93">
             <Locations>
                <Location
-                  uuid = "D67E452D-9332-4E49-8237-4F1603252A38 - 1495e6e6444b5dca"
+                  uuid = "D67E452D-9332-4E49-8237-4F1603252A38 - 7f6597eddb7b36d2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "33-&#x5355;&#x4f8b;&#x6a21;&#x5f0f;"
+                  symbolName = "main"
+                  moduleName = "37-&#x5bf9;&#x8c61;&#x7c7b;&#x578b;&#x7684;&#x53c2;&#x6570;&#x548c;&#x8fd4;&#x56de;&#x503c;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "12179">
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/37-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8F%82%E6%95%B0%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "147">
                </Location>
             </Locations>
          </BreakpointContent>
