@@ -14,12 +14,12 @@
             symbolName = "*0x100003299">
             <Locations>
                <Location
-                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - c42826498f966354"
+                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 3c50cd91e164e844"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "_mh_execute_header"
-                  moduleName = "39-&#x7f16;&#x8bd1;&#x5668;&#x751f;&#x6210;&#x6784;&#x9020;&#x51fd;&#x6570;"
+                  moduleName = "40-&#x53cb;&#x5143;"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "12953">
                </Location>
@@ -36,12 +36,12 @@
             symbolName = "*0x100003b3a">
             <Locations>
                <Location
-                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - c42826498f966354"
+                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - 3c50cd91e164e844"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "_mh_execute_header"
-                  moduleName = "39-&#x7f16;&#x8bd1;&#x5668;&#x751f;&#x6210;&#x6784;&#x9020;&#x51fd;&#x6570;"
+                  moduleName = "40-&#x53cb;&#x5143;"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "15162">
                </Location>
@@ -58,12 +58,12 @@
             symbolName = "*0x100003ab7">
             <Locations>
                <Location
-                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - c42826498f966354"
+                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - 3c50cd91e164e844"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "_mh_execute_header"
-                  moduleName = "39-&#x7f16;&#x8bd1;&#x5668;&#x751f;&#x6210;&#x6784;&#x9020;&#x51fd;&#x6570;"
+                  moduleName = "40-&#x53cb;&#x5143;"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "15031">
                </Location>
@@ -96,14 +96,19 @@
             symbolName = "*0x100003d79">
             <Locations>
                <Location
-                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - c42826498f966354"
+                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - 91a93e8b149e6d18"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "39-&#x7f16;&#x8bd1;&#x5668;&#x751f;&#x6210;&#x6784;&#x9020;&#x51fd;&#x6570;"
+                  symbolName = "Point::display()"
+                  moduleName = "40-&#x53cb;&#x5143;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "15737">
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/40-%E5%8F%8B%E5%85%83/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "105">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -166,12 +171,12 @@
             symbolName = "*0x100002f93">
             <Locations>
                <Location
-                  uuid = "D67E452D-9332-4E49-8237-4F1603252A38 - c42826498f966354"
+                  uuid = "D67E452D-9332-4E49-8237-4F1603252A38 - 3c50cd91e164e844"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "_mh_execute_header"
-                  moduleName = "39-&#x7f16;&#x8bd1;&#x5668;&#x751f;&#x6210;&#x6784;&#x9020;&#x51fd;&#x6570;"
+                  moduleName = "40-&#x53cb;&#x5143;"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "12179">
                </Location>
@@ -208,6 +213,18 @@
             endingLineNumber = "174"
             landmarkName = "main()"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "FAAB548B-7ED8-4688-B68A-003E3EA089DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
