@@ -6,6 +6,7 @@
 //
 
 #include <iostream>
+using namespace std;
 
 class Point {
     // 友元函数
@@ -14,7 +15,9 @@ class Point {
     // 引用类型是为了不产生中间对象或者说不产生临时对象因为 Point p1
 //    friend Point operator+(const Point &, const Point &);
 //    friend Point operator-(const Point &, const Point &);
-
+    friend ostream &operator<<(ostream &, const Point &);
+    friend istream &operator>>(istream &cin, Point &point);
+    
     int m_x;
     int m_y;
     
@@ -123,33 +126,52 @@ public:
 //    return Point(p1.m_x - p2.m_x, p1.m_y - p2.m_y);
 //}
 
+
+// 如果是成员函数，在里面的话，其<< 左侧一定是成员or对象，不可能是cout
+// 所以放在外面 只能重载为全局函数
+// output stream -> ostream
+// 如果多个 << 需要先返回cout，所以return cout
+ostream &operator<<(ostream &cout, const Point &point) {
+    cout << "(" << point.m_x << ", " << point.m_y << ")" << endl;
+    return cout;
+}
+
+// input stream -> istream
+// 没有const，因为键盘输入值。肯定要修改，不能用const
+istream &operator>>(istream &cin, Point &point) {
+    cin >> point.m_x;
+    cin >> point.m_y;
+    return cin;
+}
+
+
 int main() {
    
     Point p1(10, 20);
     Point p2(20, 30);
     Point p3(30, 40);
-//    Point p4 = p1 + p2 + p3;
-//    p4.display();
+    Point p4 = p1 + p2 + p3;
+    p4.display();
     
     
-//    Point p5 = p3 - p2;
-//    p5.display();
+    Point p5 = p3 - p2;
+    p5.display();
     
     
-//    (p2+=p3) = Point(100, 100);
-//    p2.display();
+    (p2+=p3) = Point(100, 100);
+    p2.display();
     
     
-//    Point p6(10, 20);
-//    Point p7(10, 20);
-//    Point p8(10, 10);
-//    std::cout << (p6 == p7) << std::endl;
-//    std::cout << (p6 == p8) << std::endl;
+    Point p6(10, 20);
+    Point p7(10, 20);
+    Point p8(10, 10);
+    std::cout << (p6 == p7) << std::endl;
+    std::cout << (p6 == p8) << std::endl;
     
     
-//    Point p9 = -p1;
-//    p1.display();
-//    p9.display();
+    Point p99 = -p1;
+    p1.display();
+    p99.display();
     
     
     // ++ 和 --
@@ -161,21 +183,30 @@ int main() {
     p2--;
     p2.display();
     
-    int a = 20;
-    (++a) = 30; // 前置++可以被赋值，先让a的值加1，再返回a的值
+//    int a = 20;
+//    (++a) = 30; // 前置++可以被赋值，先让a的值加1，再返回a的值
 //    (a++) = 30; // 后置++不可以被赋值，++在后，并不是返回a，只是将a的值放这里，然后操作完毕后，在a += 1
     
     
     Point p9(10, 20);
+    Point p11(20, 30);
     // ++ 在后，先取出10,20相加得到30,60，然后将10,20和1相加
 //    Point p10 = p9++ + Point(30, 40);
     // ++ 在前，先取出10,20和1相加，然后将相加结果和30, 40相加
-    Point p10 = (++p9) + Point(30, 40);
+//    Point p10 = (++p9) + Point(30, 40);
 
-    p9.display();
-    p10.display();
+//    p9.display();
+//    p10.display();
     
     
+    cout << p9 << p11;
+//    cout << p11;
+
+    
+    cin >> p9 >> p11;
+    
+    cout << p9 << p11 << endl;
+
     getchar();
     return 0;
 }
