@@ -14,7 +14,7 @@ public:
         
     Person &operator=(const Person &person) {
         m_age = person.m_age;
-    }
+    } // Non-void function does not return a value
 };
 
 class Student: public Person {
@@ -25,7 +25,7 @@ public:
         // 类似于拷贝构造函数
         Person::operator=(student);
         m_score = student.m_score;
-    }
+    } // Non-void function does not return a value
 };
 
 int main() {
