@@ -19,6 +19,12 @@ class Cat {
 private:
     Cat() {} // 构造函数私有化
     ~Cat() {} // 析构函数私有化
+    // 拷贝构造函数私有化
+    Car(const Car &car) {}
+    // 不能自己赋值给自己
+    void Car=(const Car &car) {}
+    
+    
     static Cat *m_cat; // 使用* 对象能放堆空间就放堆空间，更灵活手动管理
 public:
     // 单例
