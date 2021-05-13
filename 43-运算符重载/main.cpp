@@ -69,9 +69,42 @@ public:
         return (m_x != point.m_x) && (m_y != point.m_y);
     }
     
+    // - 负号 保证之前不变
+    const Point operator-() {
+        return Point(-m_x, -m_y);
+    }
+    
+    // 前置++
+    Point &operator++() {
+        m_x++;
+        m_y++;
+        return *this;
+    }
+    
+    // 后置++ 是新增int 写int就是后置
+    const Point operator++(int) {
+        Point oldPoint(m_x, m_y);
+        m_x++;
+        m_y++;
+        return oldPoint;
+    }
+    
+    // 前置--
+    void operator--() {
+        m_x--;
+        m_y--;
+    }
+    
+    // 后置--
+    void operator--(int) {
+        m_x--;
+        m_y--;
+    }
+    
+    
     void display() {
-        std::cout << m_x << std::endl;
-        std::cout << m_y << std::endl;
+        std::cout << m_x << "   " << m_y << std::endl;
+//        std::cout << m_y << std::endl;
     }
     
 };
@@ -95,21 +128,53 @@ int main() {
     Point p1(10, 20);
     Point p2(20, 30);
     Point p3(30, 40);
+//    Point p4 = p1 + p2 + p3;
+//    p4.display();
     
-    Point p4 = p1 + p2 + p3;
-    p4.display();
     
-    Point p5 = p3 - p2;
-    p5.display();
+//    Point p5 = p3 - p2;
+//    p5.display();
     
-    (p2+=p3) = Point(100, 100);
+    
+//    (p2+=p3) = Point(100, 100);
+//    p2.display();
+    
+    
+//    Point p6(10, 20);
+//    Point p7(10, 20);
+//    Point p8(10, 10);
+//    std::cout << (p6 == p7) << std::endl;
+//    std::cout << (p6 == p8) << std::endl;
+    
+    
+//    Point p9 = -p1;
+//    p1.display();
+//    p9.display();
+    
+    
+    // ++ 和 --
+    ++p1;
+    p1++;
+    p1.display();
+    
+    --p2;
+    p2--;
     p2.display();
     
-    Point p6(10, 20);
-    Point p7(10, 20);
-    Point p8(10, 10);
-    std::cout << (p6 == p7) << std::endl;
-    std::cout << (p6 == p8) << std::endl;
+    int a = 20;
+    (++a) = 30; // 前置++可以被赋值，先让a的值加1，再返回a的值
+//    (a++) = 30; // 后置++不可以被赋值，++在后，并不是返回a，只是将a的值放这里，然后操作完毕后，在a += 1
+    
+    
+    Point p9(10, 20);
+    // ++ 在后，先取出10,20相加得到30,60，然后将10,20和1相加
+//    Point p10 = p9++ + Point(30, 40);
+    // ++ 在前，先取出10,20和1相加，然后将相加结果和30, 40相加
+    Point p10 = (++p9) + Point(30, 40);
+
+    p9.display();
+    p10.display();
+    
     
     getchar();
     return 0;
