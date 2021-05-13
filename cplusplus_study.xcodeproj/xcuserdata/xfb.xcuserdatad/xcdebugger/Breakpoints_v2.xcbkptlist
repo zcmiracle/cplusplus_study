@@ -96,14 +96,19 @@
             symbolName = "*0x100003d79">
             <Locations>
                <Location
-                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - 6b081e5a9e32a813"
+                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - f1c1f509111c52ba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
+                  symbolName = "Point::display()"
                   moduleName = "43-&#x8fd0;&#x7b97;&#x7b26;&#x91cd;&#x8f7d;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "15737">
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/43-%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "89">
                </Location>
             </Locations>
          </BreakpointContent>
