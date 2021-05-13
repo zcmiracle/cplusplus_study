@@ -8,6 +8,23 @@
 #include <iostream>
 using namespace std;
 
+/**
+ 运算符重载注意点：
+ 有些运算符不可以被重载，比如：
+ 1、对象成员访问运算符：. 点
+ 2、域运算符：::
+ 3、三目运算符： ?
+ sizeof
+ 
+ 有些运算符只能重载为【成员函数】比如：
+ 1、赋值运算符 =
+ 2、下标运算符 []
+ 3、函数运算符 ()
+ 4、指针访问成员 ->
+ 
+ */
+
+
 class Point {
     // 友元函数
 //    friend Point operator+(Point, Point);
