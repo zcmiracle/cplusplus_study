@@ -14,19 +14,19 @@
             symbolName = "*0x100003299">
             <Locations>
                <Location
-                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 14b85a3e0d79c938"
+                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - a2726e64f22b624a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp; std::__1::endl&lt;char, std::__1::char_traits&lt;char&gt; &gt;(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;)"
-                  moduleName = "43-&#x8fd0;&#x7b97;&#x7b26;&#x91cd;&#x8f7d;"
+                  symbolName = "std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp; std::__1::__put_character_sequence&lt;char, std::__1::char_traits&lt;char&gt; &gt;(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;, char const*, unsigned long)"
+                  moduleName = "49-&#x7c7b;&#x6a21;&#x677f;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ostream"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1006"
-                  endingLineNumber = "1006"
-                  offsetFromSymbolStart = "41">
+                  startingLineNumber = "732"
+                  endingLineNumber = "732"
+                  offsetFromSymbolStart = "105">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -41,19 +41,19 @@
             symbolName = "*0x100003b3a">
             <Locations>
                <Location
-                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - 37e5393f21425f59"
+                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - cd1def6ec6dd34dc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "std::__1::allocator&lt;char&gt;::allocator()"
-                  moduleName = "43-&#x8fd0;&#x7b97;&#x7b26;&#x91cd;&#x8f7d;"
+                  symbolName = "std::__1::ostreambuf_iterator&lt;char, std::__1::char_traits&lt;char&gt; &gt;::ostreambuf_iterator(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;)"
+                  moduleName = "49-&#x7c7b;&#x6a21;&#x677f;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory"
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1853"
-                  endingLineNumber = "1853"
-                  offsetFromSymbolStart = "10">
+                  startingLineNumber = "1163"
+                  endingLineNumber = "1163"
+                  offsetFromSymbolStart = "26">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -68,18 +68,18 @@
             symbolName = "*0x100003ab7">
             <Locations>
                <Location
-                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - e7d76e38e78ae43e"
+                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - fe96d42b910b38c5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "std::__1::__compressed_pair&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;::__rep, std::__1::allocator&lt;char&gt; &gt;::__compressed_pair&lt;std::__1::__default_init_tag, std::__1::__default_init_tag&gt;(std::__1::__default_init_tag&amp;&amp;, std::__1::__default_init_tag&amp;&amp;)"
-                  moduleName = "43-&#x8fd0;&#x7b97;&#x7b26;&#x91cd;&#x8f7d;"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;::__get_short_pointer() const"
+                  moduleName = "49-&#x7c7b;&#x6a21;&#x677f;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory"
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "2294"
-                  endingLineNumber = "2294"
+                  startingLineNumber = "1508"
+                  endingLineNumber = "1508"
                   offsetFromSymbolStart = "39">
                </Location>
             </Locations>
@@ -111,19 +111,14 @@
             symbolName = "*0x100003d79">
             <Locations>
                <Location
-                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - 69bc93c0ac7c3c69"
+                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - 6861d954c040458a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "std::__1::ios_base::setstate(unsigned int)"
-                  moduleName = "43-&#x8fd0;&#x7b97;&#x7b26;&#x91cd;&#x8f7d;"
+                  symbolName = "std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;::sentry::sentry(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;)"
+                  moduleName = "49-&#x7c7b;&#x6a21;&#x677f;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "546"
-                  endingLineNumber = "546"
-                  offsetFromSymbolStart = "9">
+                  offsetFromSymbolStart = "5">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -186,19 +181,19 @@
             symbolName = "*0x100002f93">
             <Locations>
                <Location
-                  uuid = "D67E452D-9332-4E49-8237-4F1603252A38 - 8ad149decec342e7"
+                  uuid = "D67E452D-9332-4E49-8237-4F1603252A38 - e350006dbccf9749"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "main"
-                  moduleName = "43-&#x8fd0;&#x7b97;&#x7b26;&#x91cd;&#x8f7d;"
+                  symbolName = "Array::Array(int)"
+                  moduleName = "49-&#x7c7b;&#x6a21;&#x677f;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/43-%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD/main.cpp"
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/49-%E7%B1%BB%E6%A8%A1%E6%9D%BF/main.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "149"
-                  endingLineNumber = "149"
-                  offsetFromSymbolStart = "35">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "3">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -239,6 +234,18 @@
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             uuid = "FAAB548B-7ED8-4688-B68A-003E3EA089DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "EA57F143-F733-481B-AFCE-0541F073FE17"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
