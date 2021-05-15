@@ -86,6 +86,54 @@ int main() {
     std::cout << exec( 20, 10, [](int v1, int v2) { return v1 / v2; } ) << std::endl;
 
     
+    
+    int a = 1000;
+    int b = 2000;
+    // 默认都是值捕获
+    auto func1 = [a] {
+        std::cout << "值捕获 a = "<< a << std::endl;
+    };
+    
+    // 地址捕获 访问最新的a 相当于引用传递 引用了外面的a
+    auto func2 = [&a, b] { // a是地址(引用)捕获，b是值捕获
+        std::cout << "地址捕获 a = " << a << std::endl;
+        std::cout << "值捕获 b = " << b << std::endl;
+    };
+    
+    // 隐式捕获
+    auto func3 = [=] {
+        std::cout << "隐式捕获 a = " << a << std::endl;
+        std::cout << "隐式捕获 b = " << b << std::endl;
+    };
+    
+    // a是值捕获，其余变量是地址捕获
+    auto func4 = [&, a] {
+        std::cout << "a是值捕获 a = " << a << std::endl;
+        std::cout << "其他是地址捕获 = " << b << std::endl;
+    };
+    
+ 
+    
+    a = 200;
+    b = 100;
+    
+    func1(); // 值捕获
+    func2(); // 地址捕获
+    func3(); // 隐式捕获
+    func4(); // &, a ---> a是值捕获，其余变量是地址捕获
+
+    
+    
+    auto func5 = [a] () mutable {
+        a++;
+        std::cout << "lambda 中的a = " << a << std::endl;
+    };
+    
+    func5();
+    std::cout << "lambda 外的a = " << a << std::endl;
+
+    
+    
     getchar();
     return 0;
 }
