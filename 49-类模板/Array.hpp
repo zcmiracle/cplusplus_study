@@ -149,5 +149,4 @@ Item Array<Item>::operator[](int index) {
 //    return cout << "]";
 //}
 
-
 #endif /* Array_hpp */
