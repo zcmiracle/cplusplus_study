@@ -8,7 +8,6 @@
 #include <iostream>
 using namespace std;
 
-
 class Sum {
 public:
     int m_age;
