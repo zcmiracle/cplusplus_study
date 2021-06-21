@@ -11,8 +11,6 @@
 // cout << "Hello, world!!!" << endl;
 using namespace std;
 
-
-
 // cout、cin
 void test() {
 
