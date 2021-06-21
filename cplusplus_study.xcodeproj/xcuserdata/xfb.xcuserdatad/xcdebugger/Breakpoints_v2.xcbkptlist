@@ -14,14 +14,19 @@
             symbolName = "*0x100003299">
             <Locations>
                <Location
-                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 3c4375fd5a75c85c"
+                  uuid = "BF2AEF28-B587-4832-97FA-2E7DE6D565D5 - 8baa1b160fc3c6dc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "42-&#x5c40;&#x90e8;&#x7c7b;"
+                  symbolName = "std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp; std::__1::__put_character_sequence&lt;char, std::__1::char_traits&lt;char&gt; &gt;(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;, char const*, unsigned long)"
+                  moduleName = "50-&#x7c7b;&#x578b;&#x8f6c;&#x6362;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "12953">
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ostream"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "732"
+                  endingLineNumber = "732"
+                  offsetFromSymbolStart = "121">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -36,14 +41,19 @@
             symbolName = "*0x100003b3a">
             <Locations>
                <Location
-                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - 3c4375fd5a75c85c"
+                  uuid = "92CADD60-57E4-45E0-AD4D-6724BA26DC5E - e4c59a1c3b35904a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "42-&#x5c40;&#x90e8;&#x7c7b;"
+                  symbolName = "std::__1::ostreambuf_iterator&lt;char, std::__1::char_traits&lt;char&gt; &gt;::ostreambuf_iterator(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;)"
+                  moduleName = "50-&#x7c7b;&#x578b;&#x8f6c;&#x6362;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "15162">
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1163"
+                  endingLineNumber = "1163"
+                  offsetFromSymbolStart = "42">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -58,14 +68,19 @@
             symbolName = "*0x100003ab7">
             <Locations>
                <Location
-                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - 3c4375fd5a75c85c"
+                  uuid = "B898E77A-A3E6-40A9-89EE-E6800D1436B2 - daf354a360733155"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "42-&#x5c40;&#x90e8;&#x7c7b;"
+                  symbolName = "std::__1::__compressed_pair&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;::__rep, std::__1::allocator&lt;char&gt; &gt;::first() const"
+                  moduleName = "50-&#x7c7b;&#x578b;&#x8f6c;&#x6362;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "15031">
+                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2313"
+                  endingLineNumber = "2313"
+                  offsetFromSymbolStart = "7">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -96,14 +111,14 @@
             symbolName = "*0x100003d79">
             <Locations>
                <Location
-                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - 3c4375fd5a75c85c"
+                  uuid = "6C697449-ECFE-4FF5-B058-5FA1A3F765C2 - 29e947ba94e2523c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "42-&#x5c40;&#x90e8;&#x7c7b;"
+                  symbolName = "memset"
+                  moduleName = "50-&#x7c7b;&#x578b;&#x8f6c;&#x6362;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "15737">
+                  offsetFromSymbolStart = "5">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -166,14 +181,19 @@
             symbolName = "*0x100002f93">
             <Locations>
                <Location
-                  uuid = "D67E452D-9332-4E49-8237-4F1603252A38 - 3c4375fd5a75c85c"
+                  uuid = "D67E452D-9332-4E49-8237-4F1603252A38 - 9813b1d1025349f6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "_mh_execute_header"
-                  moduleName = "42-&#x5c40;&#x90e8;&#x7c7b;"
+                  symbolName = "main"
+                  moduleName = "50-&#x7c7b;&#x578b;&#x8f6c;&#x6362;"
                   usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "12179">
+                  urlString = "file:///Users/xfb/Desktop/Project/cplusplus_study/50-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "1251">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -220,6 +240,50 @@
             breakpointStackSelectionBehavior = "1"
             scope = "1"
             stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "EA57F143-F733-481B-AFCE-0541F073FE17"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A040235D-C753-4F47-B807-40F40F29FAE8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "49-&#x7c7b;&#x6a21;&#x677f;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "249C3711-5C04-4521-A817-70B2B988D676"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "50-&#x7c7b;&#x578b;&#x8f6c;&#x6362;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "main()"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
