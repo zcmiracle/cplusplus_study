@@ -678,6 +678,7 @@
 		B3AC75CE264F7AEE000B7E99 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3AC760C264F97DC000B7E99 /* 53-C++14和C++17 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "53-C++14和C++17"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AC760E264F97DC000B7E99 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B3AD0393268177F200B0019A /* 面向对象和面向过程.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "面向对象和面向过程.md"; sourceTree = "<group>"; };
 		B3EEADAB263A5CA5006C4735 /* 07-内联汇编 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "07-内联汇编"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EEADAD263A5CA5006C4735 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3FDD3152639544B00C95E79 /* 05-const */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "05-const"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1079,6 +1080,7 @@
 			isa = PBXGroup;
 			children = (
 				8A8BBE232680C7F200E9EE70 /* main.cpp */,
+				B3AD0393268177F200B0019A /* 面向对象和面向过程.md */,
 			);
 			path = "54-圆的周长和面积";
 			sourceTree = "<group>";

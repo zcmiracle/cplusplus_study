@@ -82,6 +82,5 @@ int main() {
     Bay E;
 //    E.get_girth()
     
-    
     return 0;
 }
