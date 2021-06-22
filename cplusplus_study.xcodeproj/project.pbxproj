@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A8639E0268236FE0053E319 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A8639DF268236FE0053E319 /* main.cpp */; };
 		8A8BBE242680C7F200E9EE70 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BBE232680C7F200E9EE70 /* main.cpp */; };
 		B309AE6D2637EF6B00B1636E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B309AE6C2637EF6B00B1636E /* main.cpp */; };
 		B309AE7E26380FBA00B1636E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B309AE7D26380FBA00B1636E /* main.cpp */; };
@@ -70,6 +71,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		8A8639DB268236FE0053E319 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		8A8BBE1F2680C7F200E9EE70 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -586,6 +596,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A8639DD268236FE0053E319 /* 57-通讯录增删 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "57-通讯录增删"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8639DF268236FE0053E319 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8A8BBE212680C7F200E9EE70 /* 54-圆的周长和面积 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "54-圆的周长和面积"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BBE232680C7F200E9EE70 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B309AE6A2637EF6B00B1636E /* 01-函数重载 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-函数重载"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -712,6 +724,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8A8639DA268236FE0053E319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A8BBE1E2680C7F200E9EE70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1114,6 +1133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A8639DE268236FE0053E319 /* 57-通讯录增删 */ = {
+			isa = PBXGroup;
+			children = (
+				8A8639DF268236FE0053E319 /* main.cpp */,
+			);
+			path = "57-通讯录增删";
+			sourceTree = "<group>";
+		};
 		8A8BBE222680C7F200E9EE70 /* 54-圆的周长和面积 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1199,6 +1226,7 @@
 				8A8BBE222680C7F200E9EE70 /* 54-圆的周长和面积 */,
 				B3AD03D02681950900B0019A /* 55-类 */,
 				B3AD04132681CA1E00B0019A /* 56-构造函数&拷贝构造 */,
+				8A8639DE268236FE0053E319 /* 57-通讯录增删 */,
 				B3147FC72637C44C00CF20D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1263,6 +1291,7 @@
 				8A8BBE212680C7F200E9EE70 /* 54-圆的周长和面积 */,
 				B3AD03CF2681950900B0019A /* 55-类 */,
 				B3AD04122681CA1E00B0019A /* 56-构造函数&拷贝构造 */,
+				8A8639DD268236FE0053E319 /* 57-通讯录增删 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1710,6 +1739,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8A8639DC268236FE0053E319 /* 57-通讯录增删 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A8639E3268236FE0053E319 /* Build configuration list for PBXNativeTarget "57-通讯录增删" */;
+			buildPhases = (
+				8A8639D9268236FE0053E319 /* Sources */,
+				8A8639DA268236FE0053E319 /* Frameworks */,
+				8A8639DB268236FE0053E319 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "57-通讯录增删";
+			productName = "57-通讯录增删";
+			productReference = 8A8639DD268236FE0053E319 /* 57-通讯录增删 */;
+			productType = "com.apple.product-type.tool";
+		};
 		8A8BBE202680C7F200E9EE70 /* 54-圆的周长和面积 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A8BBE272680C7F200E9EE70 /* Build configuration list for PBXNativeTarget "54-圆的周长和面积" */;
@@ -2688,6 +2734,9 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					8A8639DC268236FE0053E319 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					8A8BBE202680C7F200E9EE70 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -2931,11 +2980,20 @@
 				8A8BBE202680C7F200E9EE70 /* 54-圆的周长和面积 */,
 				B3AD03CE2681950900B0019A /* 55-类 */,
 				B3AD04112681CA1E00B0019A /* 56-构造函数&拷贝构造 */,
+				8A8639DC268236FE0053E319 /* 57-通讯录增删 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8A8639D9268236FE0053E319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A8639E0268236FE0053E319 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A8BBE1D2680C7F200E9EE70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3398,6 +3456,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		8A8639E1268236FE0053E319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A8639E2268236FE0053E319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8A8BBE252680C7F200E9EE70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4658,6 +4738,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8A8639E3268236FE0053E319 /* Build configuration list for PBXNativeTarget "57-通讯录增删" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8639E1268236FE0053E319 /* Debug */,
+				8A8639E2268236FE0053E319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8A8BBE272680C7F200E9EE70 /* Build configuration list for PBXNativeTarget "54-圆的周长和面积" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
