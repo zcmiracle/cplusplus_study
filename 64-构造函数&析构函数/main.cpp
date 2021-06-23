@@ -9,8 +9,30 @@
 using namespace std;
 
 
+class Test1 {
+public:
+    Test1() {                       // 无参数的构造函数
+        x = 0;
+        y = 0;
+    }
+    Test1(float a, float b = 10) {  // 缺省构造函数
+        x = a;
+        y = b;
+    }
+    void Print();                   // 输出函数
+    
+private:
+    float x, y;
+};
+
+void Test1::Print() {
+    cout << "x = " << x << endl;
+    cout << "y = " << y << endl;
+}
+
+
+
 class Test {
-  
 public:
     Test(float a, float b); // 有参的构造函数的声明
     float sum();            // 求和函数
@@ -58,6 +80,18 @@ int main() {
     Test test2(3.0, 4.0);
     test2.scan(5.0, 10.0); // 重新赋值
     test2.Print();
+    
+    
+    cout << "-----分隔符-----" << endl;
+    
+    Test1 t1;
+    Test1 t2(5);
+    Test1 t3(20, 30);
+    
+    t1.Print();
+    t2.Print();
+    t3.Print();
+    
     
     getchar();
     return 0;
