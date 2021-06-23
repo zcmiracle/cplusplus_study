@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  59-this指针
+//  60-类的静态成员static
 //
 //  Created by XFB on 2021/6/23.
 //
@@ -12,6 +12,7 @@ using namespace std;
 class Rectangle {
 
 public:
+    static int object;                      // 静态成员 ***
     Rectangle(double width, double height); // 有参构造函数
     double Area();                          // 矩形面积
     int compare(Rectangle rectangle);       // 面积比较函数
@@ -40,24 +41,8 @@ int Rectangle::compare(Rectangle rectangle) {
     return max;
 }
 
-// ---------- 内联函数 ----------
-inline int Max(int a, int b) {
-    return a > b ? a : b;
-}
 
 int main() {
 
-    Rectangle rect1(10, 20);
-    Rectangle rect2(15, 15);
-    cout << "矩形最大的面积是：" << rect1.compare(rect2) << endl;
-    
-    // ---------- 内联函数 ----------
-    cout << "Max(10, 20)的最大值是：" << Max(10, 20) << endl;
-    cout << "Max(100, 120)的最大值是：" << Max(100, 120) << endl;
-    cout << "Max(300, 200)的最大值是：" << Max(300, 200) << endl;
-
-    
-    
-    getchar();
     return 0;
 }
