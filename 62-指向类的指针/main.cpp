@@ -46,12 +46,12 @@ int main() {
 
     Rectangle rect1(10, 20);
     Rectangle rect2(15, 15);
-    Rectangle *R;               // 定义一个指针
+    Rectangle *R;               // 定义指向类的指针
    
-    R = &rect1;
+    R = &rect1;                 // 获取对象rect1的地址，用指针访问成员函数
     cout << "第一个矩形的面积是：" << R->Area() << endl;
     
-    R = &rect2;
+    R = &rect2;                 // 获取对象rect2的地址，用指针访问成员函数
     cout << "第二个矩形的面积是：" << R->Area() << endl;
 
     getchar();
