@@ -709,6 +709,7 @@
 		8A2C00A62684B2430049313F /* 66-析构函数调用顺序 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "66-析构函数调用顺序"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2C00A82684B2430049313F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8A2C01332684BF280049313F /* 析构函数调用顺序.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "析构函数调用顺序.md"; sourceTree = "<group>"; };
+		8A81E6582686249200F1C72D /* 抽象类.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "抽象类.md"; sourceTree = "<group>"; };
 		8A8639DD268236FE0053E319 /* 57-通讯录增删 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "57-通讯录增删"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8639DF268236FE0053E319 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8A8BBE212680C7F200E9EE70 /* 54-圆的周长和面积 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "54-圆的周长和面积"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2028,6 +2029,7 @@
 			isa = PBXGroup;
 			children = (
 				B3D949462685E1F800227AEC /* main.cpp */,
+				8A81E6582686249200F1C72D /* 抽象类.md */,
 			);
 			path = "68-保护派生";
 			sourceTree = "<group>";
