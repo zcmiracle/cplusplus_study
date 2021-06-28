@@ -15,14 +15,14 @@ public:
         cout << "调用基类A的构造函数" << endl;
         x = 1000;
     }
-    void PrintData() {
-        cout << "X的值为：" << x << endl;
-    }
-    
-    // 基类成员函数 声明为虚函数，派生类只能引用从基类继承来的成员
-//    virtual void PrintData() {
+//    void PrintData() {
 //        cout << "X的值为：" << x << endl;
 //    }
+    
+    // 基类成员函数 声明为虚函数，派生类只能引用从基类继承来的成员
+    virtual void PrintData() {
+        cout << "X的值为：" << x << endl;
+    }
     
 private:
     int x;
