@@ -6,6 +6,7 @@
 //
 
 #include <iostream>
+using namespace std;
 
 /**
  
@@ -86,31 +87,56 @@ int main() {
     std::cout << exec( 20, 10, [](int v1, int v2) { return v1 / v2; } ) << std::endl;
 
     
-    
     int a = 1000;
     int b = 2000;
     // 默认都是值捕获
     auto func1 = [a] {
-        std::cout << "值捕获 a = "<< a << std::endl;
+        cout << "值捕获 a = "<< a << endl;
     };
     
     // 地址捕获 访问最新的a 相当于引用传递 引用了外面的a
     auto func2 = [&a, b] { // a是地址(引用)捕获，b是值捕获
-        std::cout << "地址捕获 a = " << a << std::endl;
-        std::cout << "值捕获 b = " << b << std::endl;
+        cout << "地址捕获 a = " << a << endl;
+        cout << "值捕获 b = " << b << endl;
     };
     
     // 隐式捕获
     auto func3 = [=] {
-        std::cout << "隐式捕获 a = " << a << std::endl;
-        std::cout << "隐式捕获 b = " << b << std::endl;
+        cout << "隐式捕获 a = " << a << endl;
+        cout << "隐式捕获 b = " << b << endl;
     };
     
     // a是值捕获，其余变量是地址捕获
     auto func4 = [&, a] {
-        std::cout << "a是值捕获 a = " << a << std::endl;
-        std::cout << "其他是地址捕获 = " << b << std::endl;
+        cout << "a是值捕获 a = " << a << endl;
+        cout << "其他是地址捕获 = " << b << endl;
     };
+    
+    
+//    int a = 1000;
+//    int b = 2000;
+//    // 默认都是值捕获
+//    auto func1 = [a] {
+//        std::cout << "值捕获 a = "<< a << std::endl;
+//    };
+//
+//    // 地址捕获 访问最新的a 相当于引用传递 引用了外面的a
+//    auto func2 = [&a, b] { // a是地址(引用)捕获，b是值捕获
+//        std::cout << "地址捕获 a = " << a << std::endl;
+//        std::cout << "值捕获 b = " << b << std::endl;
+//    };
+//
+//    // 隐式捕获
+//    auto func3 = [=] {
+//        std::cout << "隐式捕获 a = " << a << std::endl;
+//        std::cout << "隐式捕获 b = " << b << std::endl;
+//    };
+//
+//    // a是值捕获，其余变量是地址捕获
+//    auto func4 = [&, a] {
+//        std::cout << "a是值捕获 a = " << a << std::endl;
+//        std::cout << "其他是地址捕获 = " << b << std::endl;
+//    };
     
  
     
