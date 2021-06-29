@@ -623,6 +623,33 @@ void BookDataBase::bookData() {
 
 // 读者类
 
+class Reader {
+  
+public:
+    Reader() {
+        
+    }
+    
+    // ostream 文件输出
+    friend ostream &operator << (ostream &output, Reader &reader) {
+        output << reader.no;
+        output << " ";
+        output << endl;
+        return output;
+    }
+    
+//    char *getname() // 获取读者姓名
+    
+private:
+    int tag;                    // 删除标记
+    int no;                     // 读者编号
+    char name[40];              // 读者姓名
+    int borbook[MaxBook];       // 所借书籍
+
+};
+
+
+
 
 // 读者库类
 
