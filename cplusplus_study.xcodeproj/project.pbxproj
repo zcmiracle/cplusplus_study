@@ -89,6 +89,8 @@
 		B3AD04152681CA1E00B0019A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3AD04142681CA1E00B0019A /* main.cpp */; };
 		B3C94D0A268414F1007F9E50 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C94D09268414F1007F9E50 /* main.cpp */; };
 		B3D949472685E1F800227AEC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3D949462685E1F800227AEC /* main.cpp */; };
+		B3DC61D7268ACF3C00A5D28B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3DC61D6268ACF3C00A5D28B /* main.cpp */; };
+		B3DC6231268AD06900A5D28B /* Header.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3DC622F268AD06900A5D28B /* Header.cpp */; };
 		B3EEADAE263A5CA5006C4735 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3EEADAD263A5CA5006C4735 /* main.cpp */; };
 		B3F0E3EE2682C11D0004507D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F0E3ED2682C11D0004507D /* main.cpp */; };
 		B3FDD3182639544B00C95E79 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3FDD3172639544B00C95E79 /* main.cpp */; };
@@ -798,6 +800,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		B3DC61D2268ACF3C00A5D28B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B3EEADA9263A5CA5006C4735 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1010,6 +1021,11 @@
 		B3C94D09268414F1007F9E50 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3D949442685E1F800227AEC /* 68-保护派生 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "68-保护派生"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D949462685E1F800227AEC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B3DC61D4268ACF3C00A5D28B /* 83-图书管理应用系统 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "83-图书管理应用系统"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DC61D6268ACF3C00A5D28B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B3DC622E268ACF5E00A5D28B /* 图书管理系统文档.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "图书管理系统文档.md"; sourceTree = "<group>"; };
+		B3DC622F268AD06900A5D28B /* Header.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Header.cpp; sourceTree = "<group>"; };
+		B3DC6230268AD06900A5D28B /* Header.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Header.hpp; sourceTree = "<group>"; };
 		B3EEADAB263A5CA5006C4735 /* 07-内联汇编 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "07-内联汇编"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EEADAD263A5CA5006C4735 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3F0E3EB2682C11D0004507D /* 58-友元函数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "58-友元函数"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1569,6 +1585,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3DC61D1268ACF3C00A5D28B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EEADA8263A5CA5006C4735 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1777,6 +1800,7 @@
 				B39365C02689B2D000A6FEA3 /* 80-函数运算符重载 */,
 				B39367FB2689B92A00A6FEA3 /* 81-运算符重载- */,
 				B39368572689BF7F00A6FEA3 /* 82-运算符重载++ */,
+				B3DC61D5268ACF3C00A5D28B /* 83-图书管理应用系统 */,
 				B3147FC72637C44C00CF20D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1866,6 +1890,7 @@
 				B39365BF2689B2D000A6FEA3 /* 80-函数运算符重载 */,
 				B39367FA2689B92A00A6FEA3 /* 81-运算符重载- */,
 				B39368562689BF7F00A6FEA3 /* 82-运算符重载++ */,
+				B3DC61D4268ACF3C00A5D28B /* 83-图书管理应用系统 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2418,6 +2443,17 @@
 				8A81E6582686249200F1C72D /* 抽象类.md */,
 			);
 			path = "68-保护派生";
+			sourceTree = "<group>";
+		};
+		B3DC61D5268ACF3C00A5D28B /* 83-图书管理应用系统 */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC61D6268ACF3C00A5D28B /* main.cpp */,
+				B3DC622F268AD06900A5D28B /* Header.cpp */,
+				B3DC6230268AD06900A5D28B /* Header.hpp */,
+				B3DC622E268ACF5E00A5D28B /* 图书管理系统文档.md */,
+			);
+			path = "83-图书管理应用系统";
 			sourceTree = "<group>";
 		};
 		B3EEADAC263A5CA5006C4735 /* 07-内联汇编 */ = {
@@ -3782,6 +3818,23 @@
 			productReference = B3D949442685E1F800227AEC /* 68-保护派生 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B3DC61D3268ACF3C00A5D28B /* 83-图书管理应用系统 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DC61D8268ACF3C00A5D28B /* Build configuration list for PBXNativeTarget "83-图书管理应用系统" */;
+			buildPhases = (
+				B3DC61D0268ACF3C00A5D28B /* Sources */,
+				B3DC61D1268ACF3C00A5D28B /* Frameworks */,
+				B3DC61D2268ACF3C00A5D28B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "83-图书管理应用系统";
+			productName = "83-图书管理应用系统";
+			productReference = B3DC61D4268ACF3C00A5D28B /* 83-图书管理应用系统 */;
+			productType = "com.apple.product-type.tool";
+		};
 		B3EEADAA263A5CA5006C4735 /* 07-内联汇编 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3EEADB1263A5CA5006C4735 /* Build configuration list for PBXNativeTarget "07-内联汇编" */;
@@ -4093,6 +4146,9 @@
 					B3D949432685E1F800227AEC = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					B3DC61D3268ACF3C00A5D28B = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					B3EEADAA263A5CA5006C4735 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -4202,6 +4258,7 @@
 				B39365BE2689B2D000A6FEA3 /* 80-函数运算符重载 */,
 				B39367F92689B92A00A6FEA3 /* 81-运算符重载- */,
 				B39368552689BF7F00A6FEA3 /* 82-运算符重载++ */,
+				B3DC61D3268ACF3C00A5D28B /* 83-图书管理应用系统 */,
 			);
 		};
 /* End PBXProject section */
@@ -4832,6 +4889,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D949472685E1F800227AEC /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DC61D0268ACF3C00A5D28B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DC6231268AD06900A5D28B /* Header.cpp in Sources */,
+				B3DC61D7268ACF3C00A5D28B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6567,6 +6633,26 @@
 			};
 			name = Release;
 		};
+		B3DC61D9268ACF3C00A5D28B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B3DC61DA268ACF3C00A5D28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B3EEADAF263A5CA5006C4735 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7357,6 +7443,15 @@
 			buildConfigurations = (
 				B3D949482685E1F800227AEC /* Debug */,
 				B3D949492685E1F800227AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DC61D8268ACF3C00A5D28B /* Build configuration list for PBXNativeTarget "83-图书管理应用系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DC61D9268ACF3C00A5D28B /* Debug */,
+				B3DC61DA268ACF3C00A5D28B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
