@@ -1,12 +1,9 @@
 //
-//  Header.hpp
-//  83-图书管理应用系统
+//  BMS.h
+//  cplusplus_study
 //
-//  Created by XFB on 2021/6/29.
+//  Created by XFB on 2021/6/30.
 //
-
-#ifndef Header_hpp
-#define Header_hpp
 
 #include <iostream>
 #include <stdio.h>
@@ -23,12 +20,12 @@ const int MaxBook = 6;      // 每个人最多可以借多少本书
 
 class Book {
 public:
+
     Book() {
         
     }
     
     // Getter
-    
     int getTag() {
         return tag;             // 获取删除标记
     }
@@ -58,9 +55,9 @@ public:
     }
 
     // Setter
-    
-    void setName(char bookName[]) {
+    char *setName(char bookName[]) {
         strcpy(name, bookName);                             // 设置书名
+        return bookName;
     }
     
     void setAuthorName(char authorName[]) {
@@ -83,8 +80,8 @@ public:
         price = bookPirce;                                  // 设置书籍价格
     }
     
-    void setOnshelf(int onshelf) {
-        onshelf = onshelf;                                  // 设置是否上架
+    void setOnshelf(int ons) {
+        onshelf = ons;                                      // 设置是否上架
     }
     
     
@@ -99,16 +96,17 @@ public:
     }
     
     // 添加or录入书籍
-    void addBoook(int no, char* name, char* author, char* publisher, char* classification, int time, double price, int onshelf) {
-        tag = 0;
-        no = no;
-        strcpy(name, name);
-        strcpy(author, author);
-        strcpy(publisher, publisher);
-        strcpy(classification, classification);
-        time = time;
-        price = price;
-        onshelf = onshelf;
+    void addBoook(int book_no, char* book_name, char* book_author, char* book_publisher, char* book_classification, int book_time, double book_price, int book_onshelf) {
+        this->tag = 0;
+        no = book_no;
+        strcpy(name, book_name);
+        strcpy(author, book_author);
+        strcpy(publisher, book_publisher);
+        strcpy(classification, book_classification);
+        publishTime = book_time;
+        price = book_price;
+        onshelf = book_onshelf;
+        
     }
     
     // 借书
@@ -188,12 +186,11 @@ public:
     
     // 添加图书信息
     int addBook(int no, char* name, char* author, char* classification, char* publisher, int time, double price, int onshelf) {
-        
         Book *p = Query1(no);
         if (p == NULL) {
             top ++;
             book[top].addBoook(no, name, author, publisher, classification, time, price, onshelf);
-            return 1;;
+            return 1;
         }
         return 0;
     }
@@ -202,7 +199,7 @@ public:
     // 根据编号查找图书
     Book *Query1(int bookid) {
         for (int i = 0; i <= top; i ++) {
-            if (book[i].getNo() == bookid && book[i].getTag() == 0) {
+            if (book[i].getNo() == bookid && (book[i].getTag() == 0)) {
                 return &book[i];
             }
         }
@@ -215,7 +212,7 @@ public:
         Book *e;
         int r = 0;
         for (int i = 0; i <= top; i ++) {
-            if (strcmp(book[i].getName(), a) == 0 && book[i].getTag() == 0) {
+            if (strcmp(book[i].getName(), a) == 0 && (book[i].getTag() == 0)) {
                 if (r == 0) {
                     cout << setw(3) << "编号" << setw(10) << "书名";
                     cout << setw(10) << "作者" << setw(10) << "分类";
@@ -240,7 +237,7 @@ public:
         Book *e;
         int r = 0;
         for (int i = 0; i <= top; i ++) {
-            if (strcmp(book[i].getAuthorName(), a) == 0 && book[i].getTag() == 0) {
+            if (strcmp(book[i].getAuthorName(), a) == 0 && (book[i].getTag() == 0)) {
                 if (r == 0) {
                     cout << setw(3) << "编号" << setw(10) << "书名";
                     cout << setw(10) << "作者" << setw(10) << "分类";
@@ -263,7 +260,7 @@ public:
         Book *e;
         int r = 0;
         for (int i = 0; i <= top; i ++) {
-            if (strcmp(book[i].getPublisherName(), a) == 0 && book[i].getTag() == 0) {
+            if (strcmp(book[i].getPublisherName(), a) == 0 && (book[i].getTag() == 0)) {
                 if (r == 0) {
                     cout << setw(3) << "编号" << setw(10) << "书名";
                     cout << setw(10) << "作者" << setw(10) << "分类";
@@ -293,14 +290,9 @@ public:
     // 成员函数声明
     void bookData();    // 图书库的实际信息
     
-    
-    
-    
 private:
     int top;                // 图书记录的指针
     Book book[MaxB];        // 存书的记录量
-    
-    
     
 };
 
@@ -617,19 +609,13 @@ void BookDataBase::bookData() {
                 break;
         }
     }
-    
 }
 
 
-// 读者类
 
+// 读者类
 class Reader {
-  
 public:
-    Reader() {
-        
-    }
-    
     // ostream 文件输出
     friend ostream &operator << (ostream &output, Reader &reader) {
         output << reader.no;
@@ -638,26 +624,483 @@ public:
         return output;
     }
     
-//    char *getname() // 获取读者姓名
+    // 获取读者姓名
+    char *getname() {
+        return name;
+    }
+    
+    // 获取读者标记
+    int gettag() {
+        return tag;
+    }
+    
+    // 获取读者编号
+    int getno() {
+        return no;
+    }
+    
+    // 设置读者姓名
+    void setname(char na[]) {
+        strcpy(name, na);
+    }
+    
+    // 设置删除标记
+    void setDeleteBookName() {
+        char i;
+        cout << "你确定要删除吗？ Y/N ?" << endl;
+        cin >> i;
+        if (i == 'y' || i == 'Y') {
+            tag = 1;
+        }
+    }
+    
+    // 增加读者信息记录
+    void addReader(int readerNo, char *readerName) {
+        tag = 0;
+        no = readerNo;
+        strcpy(name, readerName);
+        
+        for (int i = 0; i < MaxBook; i ++) {
+            borbook[i] = 0;
+        }
+    }
+    
+    // 读者借书操作
+    void borrowBook(int bookid) {
+        for (int i = 0; i < MaxBook; i ++) {
+            if (borbook[i] == 0) {
+                borbook[i] = bookid;
+                return;
+            }
+        }
+    }
+     
+    // 还书的操作
+    int retBook(int bookid) {
+        for (int i = 0; i < MaxBook; i ++) {
+            if (borbook[i] == bookid) {
+                borbook[i] = 0; // 此书的借书标记为0
+                cout << "还书成功" << endl;
+                return 1;
+            }
+        }
+        cout << "此书未借出，还书失败!" << endl;
+        return 0;
+    }
+    
+    // 读出读者信息
+    void display() {
+        int hava = 0;           //
+        int bz = 0;             //
+        cout << setw(5) << no << setw(21) << name << setw(15);
+        
+        for (int i = 0; i < MaxBook; i ++) {
+            if (borbook[i] != 0) { // 有借书
+                if (bz == 0) {
+                    hava = 1;
+                    cout << "[" << borbook[i] << "]\t\t" << endl;
+                    bz ++;
+                } else {
+                    cout << "\r\t\t\t\t\t""[" << borbook[i] << "]\t\t" << setw(15) << endl;
+                }
+            }
+        }
+        
+        if (hava == 0) { // 还未借书
+            cout << "\t  还未借书" << endl;
+        }
+    }
     
 private:
-    int tag;                    // 删除标记
+    int tag;                    // 删除标记 1删除 0不删除
     int no;                     // 读者编号
     char name[40];              // 读者姓名
     int borbook[MaxBook];       // 所借书籍
-
 };
 
 
+// 读者库类，建立读者的个人借阅资料信息
+class ReaderDataBase {
+public:
+    ReaderDataBase() {  // 构造函数，将reader.text读到read()中
+        Reader reader;
+        top = -1;
+        // 操作文件和读取 ios::in
+        fstream file("reader.txt", ios::in); // 打开一个而输入文件
+        while(1) {
+            // 读取
+            file.read((char *)&reader, sizeof(reader));
+            if (!file)  break;
+            top ++;
+            read[top] = reader;
+        }
+        file.close();   // 关闭 reader.txt 文件
+    }
+    
+    ~ReaderDataBase() { // 析构函数 把read[] 记录写到 reader.txt文件当中
+        // 写入文件 ios::out
+        fstream file("reader.txt", ios::out); // 打开一个而输入文件
+        for (int i = 0; i <= top; i ++) {
+            if (read[i].gettag() == 0) {
+                file.write((char *)&read[i], sizeof(read[i]));
+            }
+        }
+        file.close();   // 关闭 reader.txt 文件
+    }
+    
+    // 删除所有读者信息
+    void clear() {
+        char i;
+        cout << "您确定要全部删除吗？Y/N ?" << endl;
+        cin >> i;
+        if (i == 'y' || i == 'Y') {
+            top = -1;
+        }
+    }
+    
+    // 添加读者时 先查找是否存在
+    int addReader(int readerNo, char *readerName) {
+        Reader *p = queryID(readerNo);
+        if (p == NULL) {
+            top ++;
+            read[top].addReader(readerNo, readerName);
+            return 1;
+        } else {
+            cout << "该编号已存在!";
+        }
+        return 0;
+    }
+    
+    // 按找读者编号查找读者
+    Reader *queryID(int readerID) {
+        for (int i = 0; i <= top; i ++) {
+            if (read[i].getno() == readerID && (read[i].gettag() == 0)) {
+                return &read[i];
+            }
+        }
+        return NULL;
+    }
+    
+    // 按找读者姓名查找读者
+    Reader *queryName(char readerName[20]) {
+        for (int i = 0; i <= top; i ++) {
+            if (strcmp(read[i].getname(), readerName) == 0 && (read[i].gettag() == 0)) {
+                return &read[i];
+            }
+        }
+        return NULL;
+    }
+    
+    // 输出所有读者信息
+    void display() {
+        for (int i = 0; i <= top; i++) {
+            if (read[i].gettag() == 0) {
+                read[i].display();
+            }
+        }
+    }
+    
+    // 读者库信息
+    void readerData();
+    
+private:
+    int top;            // 读者记录指针
+    Reader read[MaxR];  // 读者记录
+};
 
 
-// 读者库类
+// 类的实现
+void ReaderDataBase::readerData() {
+    
+    char choice1 = 0;
+    char reader_name[30];   // 读者名字
+    int reader_id;
+    char readMessage[20];   // 读信息名字
+    
+    int choice2;
+ 
+    Reader *reader;
+    while (choice1 != '0') {
+        cout << "==============================================================" << endl;
+        cout << "===                                                        ===" << endl;
+        cout << "===                   图书管理系统：读者菜单模块                ===" << endl;
+        cout << "===                                                        ===" << endl;
+        cout << "==============================================================" << endl;
+        cout << "===        1 增加数据       2 更改数据      3 删除数据          ===" << endl;
+        cout << "===        4 查询数据       5 显示数据      6 清空数据          ===" << endl;
+        cout << "===        0 返回上一级目录                                   ===" << endl;
+        cout << "===                                                        ===" << endl;
+        cout << "==============================================================" << endl;
+        cout << "==============================================================" << endl;
+        cout << "请选择操作项[0-6]:";
+        cin >> choice1;
+        
+        switch (choice1) {
+            case '1':
+                cout << "请输入读者编号：";
+                cin >> reader_id;
+                
+                cout << "请输入读者姓名：";
+                cin >> reader_name;
+                addReader(reader_id, reader_name);
+                cout << "添加读者信息成功" << endl;
+                getchar();
+                break;
+                
+            case '2':
+                cout << "请输入读者编号：";
+                cin >> reader_id;
+                reader = queryID(reader_id);
+                if (reader == NULL) {
+                    cout << "该读者不存在!" << endl;
+                    break;
+                }
+                
+                cout << "请输入读者姓名：";
+                cin >> reader_name;
+                reader->setname(reader_name);
+                cout << "修改读者信息成功" << endl;
+                getchar();
+                break;
+                
+            case '3':
+                cout << "请输入读者编号：";
+                cin >> reader_id;
+                reader = queryID(reader_id);
+                if (reader == NULL) {
+                    cout << "该读者不存在!" << endl;
+                    break;
+                }
+                
+                // 删除数据
+                reader->setDeleteBookName();
+                cout << "删除成功！" << endl;
+                getchar();
+                break;
+                
+            case '4':
+                cout << "===================================================" << endl;
+                cout << "===                                             ===" << endl;
+                cout << "===                1 按读者编号查找                ===" << endl;
+                cout << "===                2 按读者姓名查找                ===" << endl;
+                cout << "===                0 返回上级目录                  ===" << endl;
+                cout << "===                                              ===" << endl;
+                cout << "===================================================" << endl;
+                cout << "请选择操作项[0-2]:";
+                cin >> choice2;
+                
+                switch (choice2) {
+                    case '1':
+                        cout << "请输入读者编号：";
+                        cin >> reader_id;
+                        
+                        reader = queryID(reader_id);
+                        if (reader == NULL) {
+                            cout << "该读者不存在!" << endl;
+                            break;
+                        }
+                        cout << setw(10) << "读者编号" << setw(17) << setw(20) << "已借书籍编号" << endl;
+                        // 打印信息
+                        reader->display();
+                        break;
+                    case '2':
+                        cout << "请输入读者姓名：";
+                        cin >> reader_name;
+                        
+                        reader = queryName(reader_name);
+                        if (reader == NULL) {
+                            cout << "该读者不存在!" << endl;
+                            break;
+                        }
+                        cout << setw(10) << "读者姓名" << setw(17) << setw(20) << "已借书籍编号" << endl;
+                        // 打印信息
+                        reader->display();
+                        break;
+                    case '0':
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case '5':
+                cout << setw(10) << "读者姓名" << setw(17) << setw(20) << "已借书籍编号" << endl;
+                display();
+                
+                getchar();
+                break;
+            case '6':
+                clear();
+                cout << "成功删除所有数据" << endl;
+                break;
+            case '0':
+                break;
+            default:
+                break;
+        }
+    }
+    
+}
 
 
+// 实现程序的主界面
+class mainDesk {
+  
+public:
+    // 登录
+    int Login() {
+        int k = 0;
+        
+        cout << "===================================================" << endl;
+        cout << "===                                             ===" << endl;
+        cout << "===                                             ===" << endl;
+        cout << "===             高校图书信息管理应用系统             ===" << endl;
+        cout << "===                                             ===" << endl;
+        cout << "===                                             ===" << endl;
+        cout << "===================================================" << endl;
+        cout << "===                                             ===" << endl;
+        cout << "===              开发日期：2021-06-30             ===" << endl;
+        cout << "===                                             ===" << endl;
+        cout << "===================================================" << endl;
+        
+        while (choice2 != '0') {
+            ++k;
+            
+            cout << "===================================================" << endl;
+            cout << "===                                             ===" << endl;
+            cout << "===            1 登录系统    2 退出系统            ===" << endl;
+            cout << "===                                             ===" << endl;
+            cout << "===================================================" << endl;
+            cout << "请选择操作项[1-2]:";
+            cin >> choice2;
+            
+            switch (choice2) {
+                case '1':
+                    cout << "请输入学号和密码" << endl;
+                    cin >> xh >> mm;
+                    
+                    if (xh >= 123 && (xh <= 123) && (xh == mm)) {
+                        cout << "登录成功" << endl;
+                        // 进去主菜单
+                        enterDesk();
+                    }
+                    
+                    if (xh < 123321 || (xh > 123321) || xh != mm) {
+                        cout << "登录失败，您还有" << 3-k << "次登录机会" << endl;
+                        
+                        if (k >= 3) {
+                            cout << "输入错误次数操作2次，程序自动退出!" << endl;
+                            return 1;
+                        }
+                        continue;
+                    }
+                    break;
+                    
+                case '2':
+                    break;
+            }
 
-
-
-
-
-
-#endif /* Header_hpp */
+            return 1;
+        }
+        return 0;
+    }
+    
+    // 主界面函数
+    void enterDesk() {
+        while (choice5 != '0') {
+            
+            cout << "================================================" << endl;
+            cout << "===                                          ===" << endl;
+            cout << "===           普通高校图书系统管理菜单            ===" << endl;
+            cout << "===                                          ===" << endl;
+            cout << "================================================" << endl;
+            cout << "===         1 图书信息       2 读者信息         ===" << endl;
+            cout << "===         3 借阅图书       4 归还图书         ===" << endl;
+            cout << "===         0 退出系统                         ===" << endl;
+            cout << "===                                          ===" << endl;
+            cout << "================================================" << endl;
+            cout << "================================================" << endl;
+            cout << "请选择操作项[0-5]:";
+            
+            cin >> choice5;
+            
+            switch (choice5) {
+                case '1':
+                    bookDB->bookData();         // 显示图书库信息
+                    break;
+                case '2':
+                    ReaderDB.readerData();      // 显示读者库信息
+                    break;
+                case '3':
+                    cout << "   借书操作" << endl;
+                    cout << "请输入借书读者的编号:";
+                    cin >> readerid;
+                    
+                    reader = ReaderDB.queryID(readerid);
+                    if (reader == NULL) {
+                        cout << "该读者不存在!" << endl;
+                        break;
+                    }
+                    
+                    cout << "请输入要借图书的编号:";
+                    cin >> bookid;
+                    
+                    book = bookDB->Query1(bookid);
+                    if (book == NULL) {
+                        cout << "该图书不存在" << endl;
+                        break;
+                    }
+                    
+                    if (book->borrowBook() == 0) {
+                        cout << "改图书已借出，无法借阅" << endl;
+                        break;
+                    }
+                    
+                    cout << "读者借书成功！" << endl;
+                    reader->borrowBook(book->getNo());
+    
+                    break;
+                case '4':
+                    
+                    cout << "    还书操作" << endl;
+                    cout << "请输入还书读者编号：";
+                    cin >> readerid;
+                    
+                    reader = ReaderDB.queryID(readerid);
+                    if (reader == NULL) {
+                        cout << "不存在该读者，不能借书" << endl;
+                        break;
+                    }
+                    
+                    cout << "请输入要归还的图书编号:";
+                    cin >> bookid;
+                    
+                    book = bookDB->Query1(bookid);
+                    
+                    if (book == NULL) {
+                        cout << "该图书不存在，不能还书" << endl;
+                        break;
+                    }
+                    
+                    book->retBook();                // 还书操作
+                    reader->retBook(book->getNo()); // 获取图书编号
+                    break;
+                case '0':
+                    break;
+            }
+        }
+    }
+    
+    
+private:
+    char choice5;
+    char choice2;
+    double xh;  // 学号
+    double mm;  // 密码
+    int bookid;
+    int readerid;
+    
+    ReaderDataBase ReaderDB;
+    Reader *reader;
+    BookDataBase *bookDB;
+    Book *book;
+};

@@ -90,7 +90,6 @@
 		B3C94D0A268414F1007F9E50 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C94D09268414F1007F9E50 /* main.cpp */; };
 		B3D949472685E1F800227AEC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3D949462685E1F800227AEC /* main.cpp */; };
 		B3DC61D7268ACF3C00A5D28B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3DC61D6268ACF3C00A5D28B /* main.cpp */; };
-		B3DC6231268AD06900A5D28B /* Header.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3DC622F268AD06900A5D28B /* Header.cpp */; };
 		B3EEADAE263A5CA5006C4735 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3EEADAD263A5CA5006C4735 /* main.cpp */; };
 		B3F0E3EE2682C11D0004507D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F0E3ED2682C11D0004507D /* main.cpp */; };
 		B3FDD3182639544B00C95E79 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3FDD3172639544B00C95E79 /* main.cpp */; };
@@ -1017,6 +1016,7 @@
 		B3AD03D12681950900B0019A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3AD04122681CA1E00B0019A /* 56-构造函数&拷贝构造 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "56-构造函数&拷贝构造"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AD04142681CA1E00B0019A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B3C51E20268C2183007B6F74 /* BMS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMS.h; sourceTree = "<group>"; };
 		B3C94D07268414F1007F9E50 /* 65-缺省构造函数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "65-缺省构造函数"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C94D09268414F1007F9E50 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3D949442685E1F800227AEC /* 68-保护派生 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "68-保护派生"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1024,8 +1024,6 @@
 		B3DC61D4268ACF3C00A5D28B /* 83-图书管理应用系统 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "83-图书管理应用系统"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC61D6268ACF3C00A5D28B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3DC622E268ACF5E00A5D28B /* 图书管理系统文档.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "图书管理系统文档.md"; sourceTree = "<group>"; };
-		B3DC622F268AD06900A5D28B /* Header.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Header.cpp; sourceTree = "<group>"; };
-		B3DC6230268AD06900A5D28B /* Header.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Header.hpp; sourceTree = "<group>"; };
 		B3EEADAB263A5CA5006C4735 /* 07-内联汇编 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "07-内联汇编"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EEADAD263A5CA5006C4735 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B3F0E3EB2682C11D0004507D /* 58-友元函数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "58-友元函数"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2449,8 +2447,7 @@
 			isa = PBXGroup;
 			children = (
 				B3DC61D6268ACF3C00A5D28B /* main.cpp */,
-				B3DC622F268AD06900A5D28B /* Header.cpp */,
-				B3DC6230268AD06900A5D28B /* Header.hpp */,
+				B3C51E20268C2183007B6F74 /* BMS.h */,
 				B3DC622E268ACF5E00A5D28B /* 图书管理系统文档.md */,
 			);
 			path = "83-图书管理应用系统";
@@ -4896,7 +4893,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3DC6231268AD06900A5D28B /* Header.cpp in Sources */,
 				B3DC61D7268ACF3C00A5D28B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

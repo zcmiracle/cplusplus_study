@@ -6,8 +6,20 @@
 //
 
 #include <iostream>
+#include "BMS.h"
 
 int main(int argc, const char * argv[]) {
  
+    
+    mainDesk yourDesk;
+    if (yourDesk.Login()) {
+        
+        cout << "================================================" << endl;
+        cout << "===                                          ===" << endl;
+        cout << "===           感谢使用高校图书管理系统            ===" << endl;
+        cout << "===                                          ===" << endl;
+        cout << "================================================" << endl;
+    }
+    
     return 0;
 }
