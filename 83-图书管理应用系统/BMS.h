@@ -17,13 +17,8 @@ const int MaxR = 1000;      // 最多只有1W人可以借书
 const int MaxB = 100000;    // 最多可以存多少册书
 const int MaxBook = 6;      // 每个人最多可以借多少本书
 
-
 class Book {
 public:
-
-    Book() {
-        
-    }
     
     // Getter
     int getTag() {
@@ -84,7 +79,6 @@ public:
         onshelf = ons;                                      // 设置是否上架
     }
     
-    
     // 删除书籍
     void deleteBook() {
         char i;
@@ -97,7 +91,7 @@ public:
     
     // 添加or录入书籍
     void addBoook(int book_no, char* book_name, char* book_author, char* book_publisher, char* book_classification, int book_time, double book_price, int book_onshelf) {
-        this->tag = 0;
+        tag = 0;
         no = book_no;
         strcpy(name, book_name);
         strcpy(author, book_author);
@@ -106,7 +100,6 @@ public:
         publishTime = book_time;
         price = book_price;
         onshelf = book_onshelf;
-        
     }
     
     // 借书
@@ -189,6 +182,7 @@ public:
         Book *p = Query1(no);
         if (p == NULL) {
             top ++;
+            cout << "top=" << top;
             book[top].addBoook(no, name, author, publisher, classification, time, price, onshelf);
             return 1;
         }
